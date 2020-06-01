@@ -6,6 +6,7 @@ struct node
     struct node *next;
     struct node *prev;
 };
+//Insertion....
 struct node *insert(struct node *head,int num)
 {
  struct node *temp,*q;
@@ -31,6 +32,8 @@ if(head == NULL)
         return head;
     }
 }
+
+//Insert at specific position.....
 void *insertatpos(struct node *head,int num,int num2)
 {
     int i;
@@ -48,6 +51,8 @@ void *insertatpos(struct node *head,int num,int num2)
         temp->next->prev = temp;
 
 }
+
+//Display...
 void display(struct node *head)
 {
    struct node *t=head;
@@ -89,6 +94,8 @@ struct node *ddel(struct node *head,int num)
     printf("\n The number is not present in the list\n");
     return head;
 }
+
+//Sort....
 void sort(struct node *head)
 {
     struct node *f=head,*l=head;
