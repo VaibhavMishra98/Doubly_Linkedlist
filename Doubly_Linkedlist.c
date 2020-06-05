@@ -62,6 +62,7 @@ void display(struct node *head)
         t=t->next;
     }
 }
+//Delete....
 struct node *ddel(struct node *head,int num)
 {
     struct node *p, *temp;
